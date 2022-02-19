@@ -4,7 +4,14 @@ const inquirer = require("inquirer")
 const fs=require("fs")
 // creating variable and requiring generateMarkdown.js 
 var generateReadMe = require("./generateReadMe.js");
+//creating variable and using require to use npm's path//doesn't need install//part of npm
+var path = require("path");
+//function to write Readme file 
+function writetoFile(fileName,data){
+    fs.writeFileSync(path.join(process.cwd(), fileName), data)
+}
 
+function init(){
 inquirer
   .prompt([
     /* Pass your questions in here */
@@ -77,13 +84,14 @@ inquirer
               ]
           }
   ])
-  .then((answers) => {
+  .then((data) => {
     // Use user feedback for... whatever!!
           // message for the user
           console.log("Generating ReadMe file for your project ...");
           // calling function writeToFile(fileName, data) using "README.md" and generateMarkdown(data) parameters & uses a spread opperater to spread data. 
-          fs.writeFile("", generateReadMe({...data}), (err) =>
-          err ? console.log(err) : console.log('Success!')
-          );
+          writetoFile("README.md", generateReadMe({...data}));  
+          
   })
- 
+}
+
+init()
