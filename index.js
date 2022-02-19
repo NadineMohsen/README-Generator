@@ -2,54 +2,56 @@
 const inquirer = require("inquirer")
 //creating fs and using require functiion to bring in fs to write Readme File later
 const fs=require("fs")
+// creating variable and requiring generateMarkdown.js 
+var generateReadMe = require("./generateReadMe.js");
 
 inquirer
   .prompt([
     /* Pass your questions in here */
     {
-        // Takes user text input
+        // Takes user text input - github username
         type: "input",
         name: "username",
         message: "Enter Your Github Username"
       },
       {
-        // Takes user text input
+        // Takes user text input - email address
         type: "input",
         name: "email",
         message: "Enter Your Email Address"
       },
       {
-        // Takes user text input
+        // Takes user text input - project title
         type: "input",
         name: "title",
         message: "What's Your Projects Title?"
         },
         {
-          // Takes user text input
+          // Takes user text input - decription
           type: "input",
           name: "description",
           message: "Enter A Description For Your Project"
         },
         {
-          // Takes user text input
+          // Takes user text input - installation instructions
           type: "input",
           name: "installation",
           message: "Enter Your Projects Installation Instructions"
         },
         {
-          // Takes user text input
+          // Takes user text input - usage information
           type: "input",
           name: "usage",
           message: "Enter Usage Information"
         },
         {
-          // Takes user text input
+          // Takes user text input- contribution guidlines
             type: "input",
             name: "contribution",
             message: "Enter Your Project Contribution Guidelines"
         },
         {
-          // Takes user text input
+          // Takes user text input - test instructions
             type: "input",
             name: "tests",
             message: "Enter Test Instructions"
@@ -77,11 +79,11 @@ inquirer
   ])
   .then((answers) => {
     // Use user feedback for... whatever!!
+          // message for the user
+          console.log("Generating ReadMe file for your project ...");
+          // calling function writeToFile(fileName, data) using "README.md" and generateMarkdown(data) parameters & uses a spread opperater to spread data. 
+          fs.writeFile("", generateReadMe({...data}), (err) =>
+          err ? console.log(err) : console.log('Success!')
+          );
   })
-  .catch((error) => {
-    if (error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
-    } else {
-      // Something else went wrong
-    }
-  });
+ 
