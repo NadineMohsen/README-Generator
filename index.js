@@ -3,11 +3,12 @@ const inquirer = require("inquirer")
 //creating fs and using require functiion to bring in fs to write Readme File later
 const fs=require("fs")
 // creating variable and requiring generateMarkdown.js 
-var generateReadMe = require("./generateReadMe.js");
+var generateMarkdown = require("./generateMarkdown");
 //creating variable and using require to use npm's path//doesn't need install//part of npm
 var path = require("path");
+
 //function to write Readme file 
-function writetoFile(fileName,data){
+function writeToFile(fileName,data){
     fs.writeFileSync(path.join(process.cwd(), fileName), data)
 }
 
@@ -89,7 +90,7 @@ inquirer
           // message for the user
           console.log("Generating ReadMe file for your project ...");
           // calling function writeToFile(fileName, data) using "README.md" and generateMarkdown(data) parameters & uses a spread opperater to spread data. 
-          writetoFile("README.md", generateReadMe({...data}));  
+          writeToFile("README.md", generateMarkdown({...data}));  
           
   })
 }
