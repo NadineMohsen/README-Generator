@@ -3,7 +3,7 @@ const inquirer = require("inquirer")
 //creating fs and using require functiion to bring in fs to write Readme File later
 const fs=require("fs")
 // creating variable and requiring generateMarkdown.js 
-var generateMarkdown = require("./generateMarkdown");
+var generateMarkdown = require("./generateMarkdown.js");
 //creating variable and using require to use npm's path//doesn't need install//part of npm
 var path = require("path");
 
