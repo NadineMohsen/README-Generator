@@ -104,7 +104,7 @@ const questions = [
       type: 'list',
       name: 'license',
       message: 'Please provide license information.',
-      choices: ['MIT', 'GNU', 'Apache 2.0', 'ISC'],
+      choices: ['MIT', 'BSD-3-Clause', 'BSD-2-Clause','gpl-license','MPL-2.0', 'Apache-2.0', 'CDDL-1.0','EPL-2.0'],
       default: 0,
       validate: licenseInput => {
           if (licenseInput) {
@@ -116,15 +116,14 @@ const questions = [
       }
   }, 
   {
-      type: 'checkbox',
+      type: 'input',
       name: 'built with',
-      message: 'Please select the technologies that your application was built with.',
-      choices: ['HTML', 'CSS', 'SASS', 'JavaScript', 'Node.js', 'Express.js'],
-      default: 0,
+      message: 'Please enter the technologies that your application was built with.',
+
   }, 
   {
       type: 'input',
-      name: 'contributing',
+      name: 'contribution',
       message: 'Please enter your guidelines for contributing.',
       validate: contributingInput => {
           if (contributingInput) {
@@ -150,7 +149,7 @@ const questions = [
   },
   {
       type: 'input',
-      name: 'questions',
+      name: 'email',
       message: 'Please provide an email address for others to reach you with questions.',
       validate: questionsInput => {
           if (questionsInput) {
