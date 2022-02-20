@@ -58,8 +58,8 @@ function generateMarkdown(data) {
 ${data.description}
 
 ## Installation
-${data.installation}
 To use this application, please install: 
+${data.installation}
 
 ## Usage
 ${data.usage}
