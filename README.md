@@ -26,7 +26,7 @@ Clone the repo: https://github.com/NadineMohsen/README-Generator
 
 Enter cd Develop in terminal
 
-Download Inquirer package by entering npm i in terminal
+Download Inquirer package by entering npm install inquirer in terminal
 
 Enter node index.js in terminal
 
@@ -73,3 +73,8 @@ There's no deployed link for this project.
 For any questions you can reach me on github or by email
 - Github [My Profile on Github](https://github.com/NadineMohsen)
 - Email nadine.mohsen@hotmail.com
+
+## Demo
+![Demo1](Demo-part1.gif)
+![Demo2](Demo-part2.gif)
+![Demo3](Demo-part3.gif)

@@ -1,5 +1,5 @@
 # README Generator
-  ![BSD-3-Clause License](https://img.shields.io/badge/license-BSD-3-Clause-blue)
+  ![MIT License](https://img.shields.io/badge/license-MIT-blue)
 
 
 ## Table of Contents
@@ -14,24 +14,24 @@
 - [Questions](#Questions)
 
 ## Description
-A Node.js application that will help you generate a professional README fi
+A Node.js application that will help you generate a professional README file.
 
 ## Installation
 To use this application, please install: 
-What's Your Projects Name?
+Download Inquirer package by entering npm install inquirer in terminal
 
 ## Usage
-Answer the prompt questions: click enter to move to the next question.
+Answer the prompt questions: click enter to move to the next question.Once you have answered all the questions a markdown page will be generated for you! It will be named README-generated.md.
 
 ## Contribution
-Enter Test Instructions
+If you would like to contribute to this project reach out to me. Contact Information can be found below.
 
 ## Test-Instructions
-Licensing Options: list of options
+run: npm run test
 
 ## License
-This application is licensed under the BSD-3-Clause license.
-     [BSD-3-Clause License](https://opensource.org/licenses/BSD-3-Clause)
+This application is licensed under the MIT license.
+     [MIT License](https://opensource.org/licenses/MIT)
 
     
 
@@ -39,9 +39,9 @@ This application is licensed under the BSD-3-Clause license.
 README-Generator
 
 ## Link 
-Enter Your Email Address
+No link for this application
 
 ## Questions
 For any questions you can reach me on github or by email
 - Github [My Profile on Github](https://github.com/NadineMohsen)
-- Email Enter Test Instructions
+- Email nadine.mohsen@hotmail.com

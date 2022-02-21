@@ -117,12 +117,6 @@ const questions = [
   }, 
   {
       type: 'input',
-      name: 'built with',
-      message: 'Please enter the technologies that your application was built with.',
-
-  }, 
-  {
-      type: 'input',
       name: 'contribution',
       message: 'Please enter your guidelines for contributing.',
       validate: contributingInput => {
