@@ -17,7 +17,7 @@
 A Node.js application that will help you generate a professional README file.
 
 ## Installation
-To use this application, please install: 
+To use this application, please follow these steps: 
 
 ```md 
 Open terminal
