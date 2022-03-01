@@ -78,3 +78,9 @@ For any questions you can reach me on github or by email
 ![Demo1](Demo-part1.gif)
 ![Demo2](Demo-part2.gif)
 ![Demo3](Demo-part3.gif)
+
+## Links to Demo
+
+https://drive.google.com/file/d/1SRQvJe2uOggVgp25VCmnD2EXnhY9J5mU/view
+https://drive.google.com/file/d/1sJR1lbu2FA_z9bRtPoyG79a4AcStJ1jT/view
+https://drive.google.com/file/d/1Cu-rPcjOgcRAq90eBBBt5g6mUPkSPFMJ/view
